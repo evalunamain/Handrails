@@ -1,4 +1,4 @@
-# Active_Record_Lite
+# Active Record Lite
 
 Clone of Active Record, written in Ruby.
 
