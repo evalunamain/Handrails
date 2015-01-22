@@ -1,9 +1,6 @@
 require_relative '03_associatable'
 
-# Phase IV
 module Associatable
-  # Remember to go back to 03_associatable to write ::assoc_options
-  # has_one :house :through human source:owner
   def has_one_through(name, through_name, source_name)
 
     define_method(name) do
@@ -34,7 +31,6 @@ module Associatable
           #{through_table}.#{through_pk} = ?
       SQL
 
-    p objects
     end
   end
 end

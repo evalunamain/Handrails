@@ -73,9 +73,7 @@ module Associatable
 
   def has_many(name, options = {})
     self.assoc_options[name] = options
-    p self.assoc_options
     options = HasManyOptions.new(name.to_s, self.to_s, options)
-
 
       define_method(name) do
         pk_value = self.send(options.primary_key)
